@@ -65,17 +65,14 @@ class FullTimeEmployee extends Employee implements Department {
         this.bonus = bonus;
     }
 
-    @Override
     public double calculateSalary() {
         return getBaseSalary() + bonus;
     }
 
-    @Override
     public void assignDepartment(String deptName) {
         this.department = deptName;
     }
 
-    @Override
     public String getDepartmentDetails() {
         return department;
     }
